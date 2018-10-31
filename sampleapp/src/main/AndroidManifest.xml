@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="symbiote.h2020.eu.sampleapp">
+
+  <supports-screens
+      android:anyDensity="true"
+      android:largeScreens="true"
+      android:normalScreens="true"
+      android:smallScreens="true"
+      android:xlargeScreens="true" />
+
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+  <application
+      android:allowBackup="true"
+      android:icon="@mipmap/ic_launcher"
+      android:label="@string/app_name"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:supportsRtl="true"
+      android:theme="@style/AppTheme">
+    <activity
+        android:name=".MainActivity"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity
+        android:name=".Map_Second"
+        android:configChanges="orientation"
+        android:label="Χάρτης Λεμεσού"
+        android:screenOrientation="portrait" />
+
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="AIzaSyDUa-MnXhApj3dZODXyNo7_T13QiubYXHY" />
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+
+    <activity
+        android:name=".Charts"
+        android:configChanges="orientation"
+        android:label="Τρέχουσες Τιμές"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".Colors"
+        android:configChanges="orientation"
+        android:label="Επίπεδα Ρύπανσης"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".Limassol"
+        android:configChanges="orientation"
+        android:label="Λεμεσός"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".Zagreb"
+        android:configChanges="orientation"
+        android:label="Ζάγκρεμπ"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".Vienna"
+        android:configChanges="orientation"
+        android:label="Βιέννη"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".Lim"
+        android:configChanges="orientation"
+        android:label="Λεμεσός: Όζον (03)"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".About"
+        android:configChanges="orientation"
+        android:label="Σχετικά"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".Map_Third"
+        android:configChanges="orientation"
+        android:label="Χάρτης Ζάγκρεμπ"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".Map_First"
+        android:configChanges="orientation"
+        android:label="Χάρτης Βιέννης"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".Comparison"
+        android:configChanges="orientation"
+        android:label="Σύγκριση PM2.5"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".PM10"
+        android:configChanges="orientation"
+        android:label="Σύγκριση PM10"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".NO2"
+        android:configChanges="orientation"
+        android:label="Σύγκριση NO2"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".ViennaPM25"
+        android:configChanges="orientation"
+        android:label="Βιέννη PM2.5"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".ViennaPM10"
+        android:configChanges="orientation"
+        android:label="Βιέννη PM10"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".ViennaNO2"
+        android:configChanges="orientation"
+        android:label="Βιέννη NO2"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".ZagrebPM10"
+        android:configChanges="orientation"
+        android:label="Ζάγκρεμπ PM10"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".ZagrebPM25"
+        android:configChanges="orientation"
+        android:label="Ζάγκρεμπ PM2.5"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".ZagrebNO2"
+        android:configChanges="orientation"
+        android:label="Ζάγκρεμπ ΝΟ2"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".Historical"
+        android:configChanges="orientation"
+        android:label="Ιστορικά Δεδομένα Λεμεσού"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".HVienna"
+        android:configChanges="orientation"
+        android:label="Ιστορικά Δεδομένα Βιέννης"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".Hzagreb"
+        android:configChanges="orientation"
+        android:label="Ιστορικά Δεδομένα Ζάγκρεμπ"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".ViennaSO"
+        android:configChanges="orientation"
+        android:label="Βιέννη SΟ2"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".ViennaOZ"
+        android:configChanges="orientation"
+        android:label="Βιέννη Ο3"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".Vienna0Z2"
+        android:configChanges="orientation"
+        android:label="Βιέννη Ο3"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".ViennaS022"
+        android:configChanges="orientation"
+        android:label="Βιέννη SΟ2"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".ViennaNitro2"
+        android:configChanges="orientation"
+        android:label="Βιέννη ΝΟ2"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".ZagrebSulphur"
+        android:configChanges="orientation"
+        android:label="Ζάγκρεμπ SΟ2"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".ZagrebSulphur2"
+        android:configChanges="orientation"
+        android:label="Ζάγκρεμπ SΟ2"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".ZagrebOzone"
+        android:configChanges="orientation"
+        android:label="Ζάγκρεμπ Ο3"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".ZagrebOzone2"
+        android:configChanges="orientation"
+        android:label="Ζάγκρεμπ Ο3"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".ZagrebNitrogen2"
+        android:configChanges="orientation"
+        android:label="Ζάγκρεμπ ΝΟ2"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.CustomTheme" />
+    <activity
+        android:name=".Sulphur"
+        android:configChanges="orientation"
+        android:label="Σύγκριση S02"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".Ozone"
+        android:configChanges="orientation"
+        android:label="Σύγκριση 03"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".Weeks"
+        android:label="Ιστορικά Δεδομένα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".NO21"
+        android:label="NO2 - Πρώτη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".Sulphur1"
+        android:label="SO2 - Πρώτη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".PM101"
+        android:label="PM10 - Πρώτη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".PM251"
+        android:label="PM25 - Πρώτη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".O31"
+        android:label="O3 - Πρώτη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".O32"
+        android:label="O3 - Δεύτερη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".O33"
+        android:label="O3 - Τρίτη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".O34"
+        android:label="O3 - Τέταρτη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".NO22"
+        android:label="ΝO2 - Δεύτερη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".NO23"
+        android:label="ΝO2 - Τρίτη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".NO24"
+        android:label="ΝO2 - Τέταρτη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".PM102"
+        android:label="PM10 - Δεύτερη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".PM103"
+        android:label="PM10 - Τρίτη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".PM104"
+        android:label="PM10 - Τέταρτη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".PM252"
+        android:label="PM25 - Δεύτερη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".PM253"
+        android:label="PM25 - Τρίτη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".PM254"
+        android:label="PM25 - Τέταρτη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".Sulphur3"
+        android:label="SO2 - Τρίτη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".Sulphur4"
+        android:label="SO2 - Τέταρτη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".Sulphur2"
+        android:label="SO2 - Δεύτερη Εβδομάδα"
+        android:configChanges="orientation"
+        android:screenOrientation="portrait"></activity>
+  </application>
+
+</manifest>

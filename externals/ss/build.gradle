@@ -1,0 +1,154 @@
+buildscript {
+
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath group: 'com.cinnober.gradle', name: 'semver-git', version: '2.2.2'
+        classpath 'org.owasp:dependency-check-gradle:3.2.0'
+    }
+}
+// code
+apply plugin: 'java'
+
+// code quality
+apply plugin: 'jacoco'
+apply plugin: 'org.owasp.dependencycheck'
+
+// IDEs
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+// publishing
+apply plugin: 'com.cinnober.gradle.semver-git'
+apply plugin: 'maven-publish'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+// dependencies section
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+configurations {
+    keystoreJar {
+        extendsFrom(compile)
+        exclude(module:'bcprov-jdk15on')
+    }
+}
+
+dependencies {
+    compile 'io.jsonwebtoken:jjwt:0.9.1'
+    compile 'com.madgag.spongycastle:prov:1.58.0.0'
+    compile 'com.madgag.spongycastle:bcpkix-jdk15on:1.58.0.0'
+    compile 'commons-logging:commons-logging:1.2'
+    compile 'io.github.openfeign:feign-jackson:9.7.0'
+    compile 'commons-io:commons-io:2.6'
+
+    // JDK 9+ runtime fixes
+    if(JavaVersion.current() > JavaVersion.VERSION_1_8){
+        runtime('javax.xml.bind:jaxb-api:[2.3.0, 2.3.999]')
+    }
+
+    // common testing
+    testCompile('junit:junit:[4.12, 4.999]')
+    testCompile('org.powermock:powermock-api-mockito2:[2.0, 2.999]')
+    testCompile('org.powermock:powermock-core:[2.0, 2.999]')
+    testCompile('org.powermock:powermock-module-junit4:[2.0, 2.999]')
+}
+
+// sources and javadocs
+task sourceJar(type: Jar) {
+    from sourceSets.main.allJava
+}
+
+task generateJavaDocs(type: Javadoc) {
+    source = sourceSets.main.allJava
+    classpath = configurations.compileClasspath
+    destinationDir = reporting.file("javadocs")
+}
+
+task javadocJar(type: Jar, dependsOn: generateJavaDocs) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+
+}
+
+// hack to make the @apiNote not break the build...
+if (JavaVersion.current().isJava8Compatible()) {
+    allprojects {
+        tasks.withType(Javadoc) {
+            options.addStringOption('Xdoclint:none', '-quiet')
+        }
+    }
+}
+
+task buildRunnableServiceKeystoreFactoryJAR(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'Build Runnable Service Keystore Factory JAR',
+            'Implementation-Version': version,
+            'Main-Class': 'eu.h2020.symbiote.security.helpers.ServiceAAMCertificateKeyStoreFactory'
+    }
+    baseName = project.name + '-helper'
+    from { configurations.keystoreJar.collect { it.isDirectory() ? it : zipTree(it) } }
+	exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
+    with jar
+}
+
+artifacts {
+    archives sourceJar
+    archives javadocJar
+    archives buildRunnableServiceKeystoreFactoryJAR
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = 'eu.h2020.symbiote'
+            version = project.version
+            from components.java
+
+            artifact sourceJar {
+                classifier "sources"
+            }
+            artifact javadocJar
+            artifact buildRunnableServiceKeystoreFactoryJAR {
+                classifier "helper"
+            }
+        }
+    }
+}
+
+// code quality below
+
+// jacoco configuration section
+jacoco {
+    toolVersion = "0.7.9"
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+}
+
+
+test {
+    testLogging {
+        exceptionFormat = 'full'
+    }
+}
+
+// owasp config
+dependencyCheck {
+    outputDirectory = file("$rootDir/build/reports/security")
+}
+
+// including code quality extensions into the build
+check.dependsOn(jacocoTestReport)//, 'dependencyCheckAnalyze')
