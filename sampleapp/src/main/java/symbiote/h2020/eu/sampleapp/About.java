@@ -15,10 +15,10 @@ public class About extends AppCompatActivity {
         setContentView(R.layout.activity_about);
 
         txt = (TextView) findViewById(R.id.txt);
-        String nodata = "H εφαρμογή αυτή δημιουργήθηκε από την ερευνητική ομάδα “Νέα Μέσα, Νόηση, και Μάθηση” σε συνεργασία με το εργαστήριο του “Διαδικτύου των Πραγμάτων (IoTLab)” του Τμήματος Επικοινωνίας και Σπουδών Διαδικτύου του Τεχνολογικού Πανεπιστημίου Κύπρου στο πλαίσιο του ευρωπαϊκού ερευνητικού προγράμματος \"IoT for Education: Presenting air quality matters\"." +
+        String nodata = "This application was created by the research team \"New Media, Knowledge and Learning\" in collaboration with the IoTLab workshop of the Department of Communication and Internet Studies of the Cyprus University of Technology in the framework of the European research project \"IoT for Education: Presenting air quality matters\"." +
                 "\n" +
-                "Το πρόγραμμα έλαβε χρηματοδότηση από το πρόγραμμα Έρευνας και Καινοτομίας της Ευρωπαϊκής Ένωσης Horizon 2020 βάσει της συμφωνίας επιχορήγησης με αριθμό 688156."+
-                "\n" + "Τα δεδομένα ποιότητας αέρα για την πόλη της Λεμεσού παρέχονται από τον Κλάδο Ποιότητας Αέρα, του Τμήματος Επιθεώρησης Εργασίας του Υπουργείου Εργασίας, Πρόνοιας και Κοινωνικών Ασφαλίσεων Κύπρου.";
+                "The project was funded by the European Union's Research and Innovation Program Horizon 2020 under the Grant Agreement No. 688156."+
+                "\n" + "The air quality data for the city of Limassol is provided by the Air Quality Division of the Department of Labor Inspection of the Ministry of Labor, Welfare and Social Insurance of Cyprus.";
 
         txt.setText(Html.fromHtml(nodata));
 

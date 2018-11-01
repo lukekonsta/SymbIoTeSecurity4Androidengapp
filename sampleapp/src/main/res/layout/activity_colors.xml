@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="Επίπεδα Ρύπανσης"
+            android:text="Pollution Charts"
             android:textSize="26sp"
             android:textStyle="bold"
             android:gravity="center"/>
@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="Μονάδα Μέτρησης: μg/m3"
+            android:text="System Unit: μg/m3"
             android:textSize="20sp"
             android:textStyle="bold"
             android:gravity="center"/>
@@ -50,7 +50,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Ρύποι"
+                android:text="Particles"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:textSize="20sp"/>
@@ -73,7 +73,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Επίπεδα"
+                    android:text="Levels"
                     android:gravity="center"
                     android:textStyle="bold"
                     android:textSize="16sp"/>
@@ -89,7 +89,7 @@
                     android:textColor="#1B5E20"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Χαμηλό"
+                    android:text="Low"
                     android:gravity="center"
                     android:textStyle="bold"
                     android:textSize="16sp"/>
@@ -104,7 +104,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Ήπιο"
+                    android:text="Medium"
                     android:textColor="#f0c060"
                     android:gravity="center"
                     android:textStyle="bold"
@@ -120,7 +120,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Υψηλό"
+                    android:text="High"
                     android:textColor="#E65100"
                     android:gravity="center"
                     android:textStyle="bold"
@@ -136,7 +136,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Πολύ Υψηλό"
+                    android:text="Very High"
                     android:textColor="#D50000"
                     android:gravity="center"
                     android:textStyle="bold"

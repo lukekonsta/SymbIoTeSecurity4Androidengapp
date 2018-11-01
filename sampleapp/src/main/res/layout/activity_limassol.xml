@@ -95,7 +95,7 @@
                 android:textStyle="bold"
                 android:gravity="center"
                 android:textSize="17sp"
-                android:text="Άζωτο (NO2)"/>
+                android:text="NO2"/>
 
             <TextView
                 android:layout_width="0dp"
@@ -120,7 +120,7 @@
                 android:textStyle="bold"
                 android:gravity="center"
                 android:textSize="17sp"
-                android:text="Όζον (O3)"/>
+                android:text="O3"/>
 
             <TextView
                 android:layout_width="0dp"
@@ -145,7 +145,7 @@
                 android:textStyle="bold"
                 android:gravity="center"
                 android:textSize="17sp"
-                android:text="Θείο (SO2)"/>
+                android:text="SO2"/>
 
             <TextView
                 android:layout_width="0dp"

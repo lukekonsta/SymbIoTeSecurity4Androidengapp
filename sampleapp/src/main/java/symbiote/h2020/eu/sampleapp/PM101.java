@@ -96,13 +96,13 @@ public class PM101 extends AppCompatActivity {
         yVals4.add(new BarEntry(4, 7));
 
         BarDataSet set1, set2, set3, set4, set5;
-        set1 = new BarDataSet(yVals1, "Βιέννη");
+        set1 = new BarDataSet(yVals1, "Vienna");
         set1.setColor(Color.BLUE);
         set1.setValueTextSize(12f);
         set2 = new BarDataSet(yVals2, "");
         set2.setColor(Color.BLUE);
         set2.setValueTextSize(12f);
-        set3 = new BarDataSet(yVals3, "Ζάγκρεμπ");
+        set3 = new BarDataSet(yVals3, "Ζagreb");
         set3.setColor(Color.GREEN);
         set3.setValueTextSize(12f);
         set4 = new BarDataSet(yVals4, "");
@@ -140,13 +140,13 @@ public class PM101 extends AppCompatActivity {
         xAxis.setTextSize(11f);
         //xAxis.setValueFormatter(new IndexAxisValueFormatter(xVals));
         final ArrayList<String> xAxisLabel = new ArrayList<>();
-        xAxisLabel.add("Υ");
+        xAxisLabel.add("H");
         xAxisLabel.add("");
-        xAxisLabel.add("Χ");
+        xAxisLabel.add("L");
         xAxisLabel.add("");
-        xAxisLabel.add("Υ");
+        xAxisLabel.add("H");
         xAxisLabel.add("");
-        xAxisLabel.add("Χ");
+        xAxisLabel.add("L");
         //XAxis xAxis = chart.getXAxis();
         xAxis.setValueFormatter(new IAxisValueFormatter() {
             @Override
@@ -207,7 +207,7 @@ public class PM101 extends AppCompatActivity {
 
 
         description = (TextView)findViewById(R.id.desc);
-        String txt = "&#8226;Υ: Υψηλότερη Τιμή<br>&#8226;Χ: Χαμηλότερη Τιμή";
+        String txt = "&#8226;H: Highest Value<br>&#8226;L: Lowest Value";
         description.setText((Html.fromHtml(txt)));
 
 

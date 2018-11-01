@@ -43,7 +43,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Τρέχουσες Τιμές"
+                    android:text="Current Data"
                     android:textColor="#ffffff"
                     android:gravity="center"
                     android:textSize="32sp"/>
@@ -85,7 +85,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Ιστορικά Επίπεδα Ρύπανσης"
+                    android:text="Historical Data"
                     android:textColor="#ffffff"
                     android:gravity="center"
                     android:textSize="32sp"/>
@@ -127,7 +127,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Κλίμακες Ρύπανσης"
+                    android:text="Pollution Charts"
                     android:textColor="#ffffff"
                     android:gravity="center"
                     android:textSize="32sp"/>

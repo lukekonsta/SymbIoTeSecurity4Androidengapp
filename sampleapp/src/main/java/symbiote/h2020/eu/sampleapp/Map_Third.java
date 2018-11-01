@@ -47,7 +47,7 @@ public class Map_Third extends AppCompatActivity implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
 
-        Toast.makeText(this, "Ο χάρτης είναι έτοιμος", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "The map is ready", Toast.LENGTH_SHORT).show();
 
         mMap = googleMap;
 
@@ -55,51 +55,51 @@ public class Map_Third extends AppCompatActivity implements OnMapReadyCallback {
         // and move the map's camera to the same location.
         LatLng zagreb1 = new LatLng(45.59347915649414, 14.630463600158691);
         googleMap.addMarker(new MarkerOptions().position(zagreb1)
-                .title("Πάργ - Αισθητήρας 1 (PM2.5)"));
+                .title("Parg - Sensor 1 (PM2.5)"));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
                 //.snippet("Δείτε περισσότερα"));
 
 
         LatLng zagreb2 = new LatLng(45.82371520996094, 16.035825729370117);
         googleMap.addMarker(new MarkerOptions().position(zagreb2)
-                .title("Ζάγκρεμπ - Αισθητήρας 2 (PM10)"));
+                .title("Zagreb - Sensor 2 (PM10)"));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
                 //.snippet("Δείτε περισσότερα"));
 
 
         LatLng zagreb3 = new LatLng(45.817962646484375, 15.94795036315918);
         googleMap.addMarker(new MarkerOptions().position(zagreb3)
-                .title("Ζάγκρεμπ - Αισθητήρας 3 (NO2)"));
+                .title("Zagreb - Sensor 3 (NO2)"));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
                 //.snippet("Δείτε περισσότερα"));
 
         LatLng zagreb4 = new LatLng(45.83, 16.1);
         googleMap.addMarker(new MarkerOptions().position(zagreb4)
-                .title("Ζάγκρεμπ - Αισθητήρας 4 (SO2)"));
+                .title("Zagreb - Sensor 4 (SO2)"));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
                 //.snippet("Δείτε περισσότερα"));
 
         LatLng zagreb5 = new LatLng(45.84, 16.2);
         googleMap.addMarker(new MarkerOptions().position(zagreb5)
-                .title("Ζάγκρεμπ - Αισθητήρας 5 (SO2)"));
+                .title("Zagreb - Sensor 5 (SO2)"));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
                 //.snippet("Δείτε περισσότερα"));
 
         LatLng zagreb6 = new LatLng(45.834381103515625, 15.978155136108398);
         googleMap.addMarker(new MarkerOptions().position(zagreb6)
-                .title("Ζάγκρεμπ - Αισθητήρας 6 (O3)"));
+                .title("Zagreb - Sensor 6 (O3)"));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
                 //.snippet("Δείτε περισσότερα"));
 
         LatLng zagreb7 = new LatLng(45.6, 14.7);
         googleMap.addMarker(new MarkerOptions().position(zagreb7)
-                .title("Πάργ - Αισθητήρας 7 (O3)"));
+                .title("Parg - Sensor 7 (O3)"));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
                 //.snippet("Δείτε περισσότερα"));
 
         LatLng zagreb8 = new LatLng(45.80033874511719, 15.974072456359863);
         googleMap.addMarker(new MarkerOptions().position(zagreb8)
-                .title("Ζάγκρεμπ - Αισθητήρας 8 (NO2"));
+                .title("Zagreb - Sensor 8 (NO2"));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
                 //.snippet("Δείτε περισσότερα"));
 
@@ -123,29 +123,29 @@ public class Map_Third extends AppCompatActivity implements OnMapReadyCallback {
             @Override
             public boolean onMarkerClick(Marker marker) {
 
-                if (marker.getTitle().equals("Πάργ - Αισθητήρας 1 (PM2.5)")) {
+                if (marker.getTitle().equals("Parg - Sensor 1 (PM2.5)")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_Third.this, ZagrebPM25.class));
-                } else if (marker.getTitle().equals("Ζάγκρεμπ - Αισθητήρας 2 (PM10)")) {
+                } else if (marker.getTitle().equals("Zagreb - Sensor 2 (PM10)")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_Third.this, ZagrebPM10.class));
-                } else if (marker.getTitle().equals("Ζάγκρεμπ - Αισθητήρας 3 (NO2)")) {
+                } else if (marker.getTitle().equals("Zagreb - Sensor 3 (NO2)")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_Third.this, ZagrebNO2.class));
-                } else if (marker.getTitle().equals("Ζάγκρεμπ - Αισθητήρας 4 (SO2)")) {
+                } else if (marker.getTitle().equals("Zagreb - Sensor 4 (SO2)")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_Third.this, ZagrebSulphur.class));
-                } else if (marker.getTitle().equals("Ζάγκρεμπ - Αισθητήρας 5 (SO2)")) {
+                } else if (marker.getTitle().equals("Zagreb - Sensor 5 (SO2)")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_Third.this, ZagrebSulphur2.class));
                 }
-                else if (marker.getTitle().equals("Ζάγκρεμπ - Αισθητήρας 6 (O3)")) {
+                else if (marker.getTitle().equals("Zagreb - Sensor 6 (O3)")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_Third.this, ZagrebOzone.class));
-                }else if (marker.getTitle().equals("Πάργ - Αισθητήρας 7 (O3)")) {
+                }else if (marker.getTitle().equals("Parg - Sensor 7 (O3)")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_Third.this, ZagrebOzone2.class));
-                }else if (marker.getTitle().equals("Ζάγκρεμπ - Αισθητήρας 8 (NO2")) {
+                }else if (marker.getTitle().equals("Zagreb - Sensor 8 (NO2")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_Third.this, ZagrebNitrogen2.class));
                 }
@@ -161,45 +161,45 @@ public class Map_Third extends AppCompatActivity implements OnMapReadyCallback {
                 Intent intent1 = new Intent(Map_Third.this, MainActivity.class);
                 String title = marker.getTitle();
                 System.out.println(title);
-                if (title.equals("Πάργ - Αισθητήρας 1 (PM2.5)")) {
+                if (title.equals("Parg - Sensor 1 (PM2.5)")) {
 
                     startActivity(new Intent(Map_Third.this, ZagrebPM25.class));
 
-                } else if (title.equals("Ζάγκρεμπ - Αισθητήρας 2 (PM10)")) {
+                } else if (title.equals("Zagreb - Sensor 2 (PM10)")) {
 
                     startActivity(new Intent(Map_Third.this, ZagrebPM10.class));
 
-                } else if (title.equals("Ζάγκρεμπ - Αισθητήρας 3 (NO2)")) {
+                } else if (title.equals("Zagreb - Sensor 3 (NO2)")) {
 
                     //intent1.putExtra("markertitle", title);
                     //startActivity(intent1);
                     startActivity(new Intent(Map_Third.this, ZagrebNO2.class));
 
-                } else if (title.equals("Ζάγκρεμπ - Αισθητήρας 4 (SO2)")) {
+                } else if (title.equals("Zagreb - Sensor 4 (SO2)")) {
 
                     //intent1.putExtra("markertitle", title);
                     //startActivity(intent1);
                     startActivity(new Intent(Map_Third.this, ZagrebSulphur.class));
 
-                } else if (title.equals("Ζάγκρεμπ - Αισθητήρας 5 (SO2)")) {
+                } else if (title.equals("Zagreb - Sensor 5 (SO2)")) {
 
                     //intent1.putExtra("markertitle", title);
                     //startActivity(intent1);
                     startActivity(new Intent(Map_Third.this, ZagrebSulphur2.class));
 
-                } else if (title.equals("Ζάγκρεμπ - Αισθητήρας 6 (O3)")) {
+                } else if (title.equals("Zagreb - Sensor 6 (O3)")) {
 
                     //intent1.putExtra("markertitle", title);
                     //startActivity(intent1);
                     startActivity(new Intent(Map_Third.this, ZagrebOzone.class));
 
-                } else if (title.equals("Πάργ - Αισθητήρας 7 (O3)")) {
+                } else if (title.equals("Parg - Sensor 7 (O3)")) {
 
                     //intent1.putExtra("markertitle", title);
                     //startActivity(intent1);
                     startActivity(new Intent(Map_Third.this, ZagrebOzone2.class));
 
-                } else if (title.equals("Ζάγκρεμπ - Αισθητήρας 8 (NO2")) {
+                } else if (title.equals("Zagreb - Sensor 8 (NO2")) {
 
                     //intent1.putExtra("markertitle", title);
                     //startActivity(intent1);

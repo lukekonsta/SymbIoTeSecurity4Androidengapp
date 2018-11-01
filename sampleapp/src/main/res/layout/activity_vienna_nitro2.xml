@@ -45,7 +45,7 @@
                 android:textStyle="bold"
                 android:gravity="center"
                 android:textSize="17sp"
-                android:text="Διοξείδιο του Αζώτου (NO2)"/>
+                android:text="NO2"/>
 
             <TextView
                 android:layout_width="0dp"

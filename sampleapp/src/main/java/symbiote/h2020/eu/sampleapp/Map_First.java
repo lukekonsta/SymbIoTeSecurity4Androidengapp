@@ -47,7 +47,7 @@ public class Map_First extends AppCompatActivity implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
 
-        Toast.makeText(this, "Ο χάρτης είναι έτοιμος", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "The map is ready", Toast.LENGTH_SHORT).show();
 
         mMap = googleMap;
 
@@ -56,7 +56,7 @@ public class Map_First extends AppCompatActivity implements OnMapReadyCallback {
         LatLng vienna1 = new LatLng(48.2267875, 16.4553026);
 
         googleMap.addMarker(new MarkerOptions().position(vienna1)
-                .title("Βιέννη - Αισθητήρας 1 (PM2.5)"));
+                .title("Vienna - Sensor 1 (PM2.5)"));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
                 //.snippet("Δείτε περισσότερα"));
 
@@ -65,7 +65,7 @@ public class Map_First extends AppCompatActivity implements OnMapReadyCallback {
         LatLng vienna2 = new LatLng(48.2295081, 16.3614531);
 
         googleMap.addMarker(new MarkerOptions().position(vienna2)
-                .title("Βιέννη - Αισθητήρας 2 (PM10)"));
+                .title("Vienna - Sensor 2 (PM10)"));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
                 //.snippet("Δείτε περισσότερα"));
 
@@ -75,7 +75,7 @@ public class Map_First extends AppCompatActivity implements OnMapReadyCallback {
         LatLng vienna3 = new LatLng(48.156642, 16.4755138);
 
         googleMap.addMarker(new MarkerOptions().position(vienna3)
-                .title("Βιέννη - Αισθητήρας 3 (NO2)"));
+                .title("Vienna - Sensor 3 (NO2)"));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
                 //.snippet("Δείτε περισσότερα"));
 
@@ -83,35 +83,35 @@ public class Map_First extends AppCompatActivity implements OnMapReadyCallback {
         LatLng vienna4 = new LatLng(48.29, 16.40);
 
         googleMap.addMarker(new MarkerOptions().position(vienna4)
-                .title("Βιέννη - Αισθητήρας 4 (SO2)"));
+                .title("Vienna - Sensor 4 (SO2)"));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
                 //.snippet("Δείτε περισσότερα"));
 
         LatLng vienna5 = new LatLng(48.1607235, 16.3906138);
 
         googleMap.addMarker(new MarkerOptions().position(vienna5)
-                .title("Βιέννη - Αισθητήρας 5 (O3)"));
+                .title("Vienna - Sensor 5 (O3)"));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
                 //.snippet("Δείτε περισσότερα"));
 
         LatLng vienna6 = new LatLng(48.2701583333333, 16.2972633333333);
 
         googleMap.addMarker(new MarkerOptions().position(vienna6)
-                .title("Βιέννη - Αισθητήρας 6 (O3)"));
+                .title("Vienna - Sensor 6 (O3)"));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
                 //.snippet("Δείτε περισσότερα"));
 
         LatLng vienna7 = new LatLng(48.288, 16.300);
 
         googleMap.addMarker(new MarkerOptions().position(vienna7)
-                .title("Βιέννη - Αισθητήρας 7 (SO2)"));
+                .title("Vienna - Sensor 7 (SO2)"));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
                 //.snippet("Δείτε περισσότερα"));
 
         LatLng vienna8 = new LatLng(48.243237, 16.383134);
 
         googleMap.addMarker(new MarkerOptions().position(vienna8)
-                .title("Βιέννη - Αισθητήρας 8 (NO2)"));
+                .title("Vienna - Sensor 8 (NO2)"));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
                 //.snippet("Δείτε περισσότερα"));
 
@@ -133,28 +133,28 @@ public class Map_First extends AppCompatActivity implements OnMapReadyCallback {
             @Override
             public boolean onMarkerClick(Marker marker) {
 
-                if (marker.getTitle().equals("Βιέννη - Αισθητήρας 1 (PM2.5)")) {
+                if (marker.getTitle().equals("Vienna - Sensor 1 (PM2.5)")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_First.this, ViennaPM25.class));
-                } else if (marker.getTitle().equals("Βιέννη - Αισθητήρας 2 (PM10)")) {
+                } else if (marker.getTitle().equals("Vienna - Sensor 2 (PM10)")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_First.this, ViennaPM10.class));
-                } else if (marker.getTitle().equals("Βιέννη - Αισθητήρας 3 (NO2)")) {
+                } else if (marker.getTitle().equals("Vienna - Sensor 3 (NO2)")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_First.this, ViennaNO2.class));
-                } else if (marker.getTitle().equals("Βιέννη - Αισθητήρας 4 (SO2)")) {
+                } else if (marker.getTitle().equals("Vienna - Sensor 4 (SO2)")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_First.this, ViennaSO.class));
-                } else if (marker.getTitle().equals("Βιέννη - Αισθητήρας 5 (O3)")) {
+                } else if (marker.getTitle().equals("Vienna - Sensor 5 (O3)")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_First.this, Vienna0Z2.class));
-                } else if (marker.getTitle().equals("Βιέννη - Αισθητήρας 6 (O3)")) {
+                } else if (marker.getTitle().equals("Vienna - Sensor 6 (O3)")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_First.this, Vienna0Z2.class));
-                } else if (marker.getTitle().equals("Βιέννη - Αισθητήρας 7 (SO2)")) {
+                } else if (marker.getTitle().equals("Vienna - Sensor 7 (SO2)")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_First.this, ViennaS022.class));
-                } else if (marker.getTitle().equals("Βιέννη - Αισθητήρας 8 (NO2)")) {
+                } else if (marker.getTitle().equals("Vienna - Sensor 8 (NO2)")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_First.this, ViennaNitro2.class));
                 }
@@ -170,49 +170,49 @@ public class Map_First extends AppCompatActivity implements OnMapReadyCallback {
                 Intent intent1 = new Intent(Map_First.this, MainActivity.class);
                 String title = marker.getTitle();
                 System.out.println(title);
-                if (title.equals("Βιέννη - Αισθητήρας 1 (PM2.5)")) {
+                if (title.equals("Vienna - Sensor 1 (PM2.5)")) {
 
                     startActivity(new Intent(Map_First.this, ViennaPM25.class));
 
-                } else if (title.equals("Βιέννη - Αισθητήρας 2 (PM10)")) {
+                } else if (title.equals("Vienna - Sensor 2 (PM10)")) {
 
                     startActivity(new Intent(Map_First.this, ViennaPM10.class));
 
-                } else if (title.equals("Βιέννη - Αισθητήρας 3 (NO2)")) {
+                } else if (title.equals("Vienna - Sensor 3 (NO2)")) {
 
                     //intent1.putExtra("markertitle", title);
                     //startActivity(intent1);
                     startActivity(new Intent(Map_First.this, ViennaNO2.class));
 
-                }   else if (title.equals("Βιέννη - Αισθητήρας 4 (SO2)")) {
+                }   else if (title.equals("Vienna - Sensor 4 (SO2)")) {
 
                     //intent1.putExtra("markertitle", title);
                     //startActivity(intent1);
                     startActivity(new Intent(Map_First.this, ViennaSO.class));
                 }
 
-                else if (title.equals("Βιέννη - Αισθητήρας 5 (O3)")) {
+                else if (title.equals("Vienna - Sensor 5 (O3)")) {
 
                     //intent1.putExtra("markertitle", title);
                     //startActivity(intent1);
                     startActivity(new Intent(Map_First.this, ViennaOZ.class));
                 }
 
-                else if (title.equals("Βιέννη - Αισθητήρας 6 (O3)")) {
+                else if (title.equals("Vienna - Sensor 6 (O3)")) {
 
                     //intent1.putExtra("markertitle", title);
                     //startActivity(intent1);
                     startActivity(new Intent(Map_First.this, Vienna0Z2.class));
                 }
 
-                else if (title.equals("Βιέννη - Αισθητήρας 7 (SO2)")) {
+                else if (title.equals("Vienna - Sensor 7 (SO2)")) {
 
                     //intent1.putExtra("markertitle", title);
                     //startActivity(intent1);
                     startActivity(new Intent(Map_First.this, ViennaS022.class));
                 }
 
-                else if (title.equals("Βιέννη - Αισθητήρας 8 (NO2)")) {
+                else if (title.equals("Vienna - Sensor 8 (NO2)")) {
 
                     //intent1.putExtra("markertitle", title);
                     //startActivity(intent1);

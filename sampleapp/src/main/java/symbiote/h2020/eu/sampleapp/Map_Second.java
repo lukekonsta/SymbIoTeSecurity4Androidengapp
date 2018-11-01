@@ -47,7 +47,7 @@ public class Map_Second extends AppCompatActivity implements OnMapReadyCallback 
     @Override
     public void onMapReady(GoogleMap googleMap) {
 
-        Toast.makeText(this, "Ο χάρτης είναι έτοιμος", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "The map is ready", Toast.LENGTH_SHORT).show();
 
         mMap = googleMap;
 
@@ -56,7 +56,7 @@ public class Map_Second extends AppCompatActivity implements OnMapReadyCallback 
         LatLng limassol = new LatLng(34.686167, 33.035556);
         googleMap.addMarker(new MarkerOptions().position(limassol)
                 //.snippet("Δείτε περισσότερα")
-                .title("Λεμεσός"));
+                .title("Limassol"));
 
         CameraUpdate center=
                 CameraUpdateFactory.newLatLng(new LatLng(34.686167,
@@ -94,7 +94,7 @@ public class Map_Second extends AppCompatActivity implements OnMapReadyCallback 
             @Override
             public boolean onMarkerClick(Marker marker) {
 
-                if (marker.getTitle().equals("Λεμεσός")) {
+                if (marker.getTitle().equals("Limassol")) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_Second.this, Limassol.class));
                 } else if (marker.getTitle().equals("Ζάγκρεμπ")) {
@@ -114,7 +114,7 @@ public class Map_Second extends AppCompatActivity implements OnMapReadyCallback 
                 Intent intent1 = new Intent(Map_Second.this, MainActivity.class);
                 String title = marker.getTitle();
                 System.out.println(title);
-                if (title.equals("Λεμεσός")) {
+                if (title.equals("Limassol")) {
 
                     startActivity(new Intent(Map_Second.this, Limassol.class));
 
