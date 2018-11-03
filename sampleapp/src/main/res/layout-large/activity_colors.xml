@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="Pollution Charts"
+            android:text="@string/pollution"
             android:textSize="40sp"
             android:textStyle="bold"
             android:gravity="center"/>
@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:text="System Unit: μg/m3"
+            android:text="@string/unit"
             android:textSize="30sp"
             android:textStyle="bold"
             android:gravity="center"/>
@@ -39,23 +39,6 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical">
-
-        <LinearLayout
-            android:background="#cdc9c9"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Particles"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:textSize="28sp"/>
-
-        </LinearLayout>
 
 
         <LinearLayout
@@ -73,7 +56,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Levels"
+                    android:text="@string/pollutants"
                     android:gravity="center"
                     android:textStyle="bold"
                     android:textSize="20sp"/>
@@ -89,7 +72,7 @@
                     android:textColor="#1B5E20"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Low"
+                    android:text="@string/low"
                     android:gravity="center"
                     android:textStyle="bold"
                     android:textSize="20sp"/>
@@ -104,7 +87,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Medium"
+                    android:text="@string/moderate"
                     android:textColor="#f0c060"
                     android:gravity="center"
                     android:textStyle="bold"
@@ -120,7 +103,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="High"
+                    android:text="@string/high"
                     android:textColor="#E65100"
                     android:gravity="center"
                     android:textStyle="bold"
@@ -136,7 +119,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Very High"
+                    android:text="@string/veryhigh"
                     android:textColor="#D50000"
                     android:gravity="center"
                     android:textStyle="bold"

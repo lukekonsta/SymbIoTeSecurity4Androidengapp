@@ -103,7 +103,8 @@ public class Comparison extends AppCompatActivity {
         calendar.add(Calendar.MINUTE, -40);
         SimpleDateFormat format1 = new SimpleDateFormat("dd/MM/yyyy");
         String formatted = format1.format(calendar.getTime());
-        setTitle.setText("Data comparison for: \n" +formatted);
+        String dataComp = getResources().getString(R.string.dataComparisonfor);
+        setTitle.setText(dataComp+"\n" +formatted);
 
 
         sharedPrefs = PreferenceManager.getDefaultSharedPreferences(Comparison.this);
@@ -321,22 +322,25 @@ public class Comparison extends AppCompatActivity {
         /*set1 = new BarDataSet(yVals1, "Λεμεσός");
         set1.setColor(Color.RED);
         set1.setValueTextSize(12f);*/
-        set2 = new BarDataSet(yVals2, "Vienna: H");
+        String Vienna = getResources().getString(R.string.Vienna);
+        String Zagreb = getResources().getString(R.string.Zagreb);
+        String Limassol = getResources().getString(R.string.Limassol);
+        set2 = new BarDataSet(yVals2, Vienna);
         set2.setColor(Color.BLUE);
         set2.setValueTextSize(10f);
-        set3 = new BarDataSet(yVals3, "L");
+        set3 = new BarDataSet(yVals3, "");
         set3.setColor(Color.BLUE);
         set3.setValueTextSize(10f);
-        set4 = new BarDataSet(yVals4, "Zagreb: H");
+        set4 = new BarDataSet(yVals4, Zagreb);
         set4.setColor(Color.GREEN);
         set4.setValueTextSize(10f);
-        set5 = new BarDataSet(yVals5, "L");
+        set5 = new BarDataSet(yVals5, "");
         set5.setColor(Color.GREEN);
         set5.setValueTextSize(10f);
-        set6 = new BarDataSet(yVals6, "Limassol: H");
+        set6 = new BarDataSet(yVals6, Limassol);
         set6.setColor(Color.MAGENTA);
         set6.setValueTextSize(10f);
-        set7 = new BarDataSet(yVals7, "L");
+        set7 = new BarDataSet(yVals7, "");
         set7.setColor(Color.MAGENTA);
         set7.setValueTextSize(10f);
         BarData data = new BarData(set2, set3, set4, set5, set6, set7);
@@ -372,17 +376,14 @@ public class Comparison extends AppCompatActivity {
         xAxis.setTextSize(11f);
         //xAxis.setValueFormatter(new IndexAxisValueFormatter(xVals));
         final ArrayList<String> xAxisLabel = new ArrayList<>();
-        /*xAxisLabel.add("Υ");
-        xAxisLabel.add("");
-        xAxisLabel.add("Χ");
-        xAxisLabel.add("");
-        xAxisLabel.add("Υ");
-        xAxisLabel.add("");
-        xAxisLabel.add("Χ");
-        xAxisLabel.add("");
-        xAxisLabel.add("Υ");
-        xAxisLabel.add("");
-        xAxisLabel.add("Χ");*/
+        String highV = getResources().getString(R.string.highV);
+        String lowwV = getResources().getString(R.string.lowV);
+        xAxisLabel.add(highV);
+        xAxisLabel.add(lowwV);
+        xAxisLabel.add(highV);
+        xAxisLabel.add(lowwV);
+        xAxisLabel.add(highV);
+        xAxisLabel.add(lowwV);
         //XAxis xAxis = chart.getXAxis();
         xAxis.setValueFormatter(new IAxisValueFormatter() {
             @Override
@@ -404,7 +405,7 @@ public class Comparison extends AppCompatActivity {
         leftAxis.setAxisMinimum(0f);
 
         description = (TextView)findViewById(R.id.desc);
-        String txt = "&#8226;H: Highest Value<br>&#8226;L: Lowest Value";
+        String txt = getResources().getString(R.string.highlow);
         description.setText((Html.fromHtml(txt)));
 
 

@@ -47,7 +47,11 @@ public class Map_Second extends AppCompatActivity implements OnMapReadyCallback 
     @Override
     public void onMapReady(GoogleMap googleMap) {
 
-        Toast.makeText(this, "The map is ready", Toast.LENGTH_SHORT).show();
+        String mystring = getResources().getString(R.string.amapSec);
+        String mystring1 = getResources().getString(R.string.Limassol);
+        String mystring2 = getResources().getString(R.string.more);
+
+        Toast.makeText(this, mystring, Toast.LENGTH_SHORT).show();
 
         mMap = googleMap;
 
@@ -55,13 +59,13 @@ public class Map_Second extends AppCompatActivity implements OnMapReadyCallback 
         // and move the map's camera to the same location.
         LatLng limassol = new LatLng(34.686167, 33.035556);
         googleMap.addMarker(new MarkerOptions().position(limassol)
-                //.snippet("Δείτε περισσότερα")
-                .title("Limassol"));
+                //.snippet(mystring2)
+                .title(mystring1));
 
         CameraUpdate center=
                 CameraUpdateFactory.newLatLng(new LatLng(34.686167,
                         33.035556));
-        CameraUpdate zoom=CameraUpdateFactory.zoomTo(4);
+        CameraUpdate zoom=CameraUpdateFactory.zoomTo(10);
 
         mMap.moveCamera(center);
         mMap.animateCamera(zoom);
@@ -94,7 +98,7 @@ public class Map_Second extends AppCompatActivity implements OnMapReadyCallback 
             @Override
             public boolean onMarkerClick(Marker marker) {
 
-                if (marker.getTitle().equals("Limassol")) {
+                if (marker.getTitle().equals(mystring1)) {
                     //marker.showInfoWindow();
                     startActivity(new Intent(Map_Second.this, Limassol.class));
                 } else if (marker.getTitle().equals("Ζάγκρεμπ")) {
@@ -114,7 +118,7 @@ public class Map_Second extends AppCompatActivity implements OnMapReadyCallback 
                 Intent intent1 = new Intent(Map_Second.this, MainActivity.class);
                 String title = marker.getTitle();
                 System.out.println(title);
-                if (title.equals("Limassol")) {
+                if (title.equals(mystring1)) {
 
                     startActivity(new Intent(Map_Second.this, Limassol.class));
 

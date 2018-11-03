@@ -29,10 +29,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Limassol"
+                    android:text="@string/Limassol"
                     android:textColor="#ffffff"
                     android:gravity="center"
-                    android:textSize="16sp"/>
+                    android:textSize="20sp"/>
 
 
             </LinearLayout>
@@ -57,10 +57,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Vienna"
+                    android:text="@string/Vienna"
                     android:textColor="#ffffff"
                     android:gravity="center"
-                    android:textSize="16sp"/>
+                    android:textSize="20sp"/>
 
             </LinearLayout>
 
@@ -86,10 +86,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Ζagreb"
+                    android:text="@string/Zagreb"
                     android:textColor="#ffffff"
                     android:gravity="center"
-                    android:textSize="16sp"/>
+                    android:textSize="20sp"/>
 
 
             </LinearLayout>
@@ -115,9 +115,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="Data Comparison"
+                    android:text="@string/pollution"
                     android:textColor="#ffffff"
-                    android:textSize="16sp" />
+                    android:textSize="20sp" />
 
 
             </LinearLayout>

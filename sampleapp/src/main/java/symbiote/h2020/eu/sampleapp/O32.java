@@ -97,14 +97,17 @@ public class O32 extends AppCompatActivity {
         yVals3.add(new BarEntry(3, 42));
         yVals4.add(new BarEntry(4, 15));
 
+        String vienna = getResources().getString(R.string.Vienna);
+        String zagreb = getResources().getString(R.string.Zagreb);
+
         BarDataSet set1, set2, set3, set4, set5;
-        set1 = new BarDataSet(yVals1, "Βιέννη");
+        set1 = new BarDataSet(yVals1, vienna);
         set1.setColor(Color.BLUE);
         set1.setValueTextSize(12f);
         set2 = new BarDataSet(yVals2, "");
         set2.setColor(Color.BLUE);
         set2.setValueTextSize(12f);
-        set3 = new BarDataSet(yVals3, "Ζάγκρεμπ");
+        set3 = new BarDataSet(yVals3, zagreb);
         set3.setColor(Color.GREEN);
         set3.setValueTextSize(12f);
         set4 = new BarDataSet(yVals4, "");
@@ -142,13 +145,15 @@ public class O32 extends AppCompatActivity {
         xAxis.setTextSize(11f);
         //xAxis.setValueFormatter(new IndexAxisValueFormatter(xVals));
         final ArrayList<String> xAxisLabel = new ArrayList<>();
-        xAxisLabel.add("Υ");
+        String highV = getResources().getString(R.string.highV);
+        String lowwV = getResources().getString(R.string.lowV);
+        xAxisLabel.add(highV);
         xAxisLabel.add("");
-        xAxisLabel.add("Χ");
+        xAxisLabel.add(lowwV);
         xAxisLabel.add("");
-        xAxisLabel.add("Υ");
+        xAxisLabel.add(highV);
         xAxisLabel.add("");
-        xAxisLabel.add("Χ");
+        xAxisLabel.add(lowwV);
         //XAxis xAxis = chart.getXAxis();
         xAxis.setValueFormatter(new IAxisValueFormatter() {
             @Override
@@ -208,7 +213,7 @@ public class O32 extends AppCompatActivity {
         });
 
         description = (TextView)findViewById(R.id.desc);
-        String txt = "&#8226;Υ: Υψηλότερη Τιμή<br>&#8226;Χ: Χαμηλότερη Τιμή";
+        String txt = getResources().getString(R.string.highlow);
         description.setText((Html.fromHtml(txt)));
 
 

@@ -1,4 +1,49 @@
 <resources>
     <string name="app_name">IoT4ED</string>
     <string name="google_maps_API_key">AIzaSyDUa-MnXhApj3dZODXyNo7_T13QiubYXHY</string>
+    <string name="airquality">Air Quality Now</string>
+    <string name="historical1">Historical Data</string>
+    <string name="pollution">Pollution Level</string>
+    <string name="unit">Unit: μg/m3</string>
+    <string name="pollutants">Pollutants</string>
+    <string name="low">Low</string>
+    <string name="moderate">Moderate</string>
+    <string name="high">High</string>
+    <string name="veryhigh">Very High</string>
+    <string name="aboutUs">About</string>
+    <string name="about1">This application was designed and developed by the “Media, Cognition and Learning” Research group and the IoT Lab of the Department of Communication and Internet Studies of the Cyprus University of Technology under the European research project “IoT for Education: Presenting air quality matters”."
+
+        The project was funded by the European Union’s Research and Innovation Program Horizon 2020 under the Grant Agreement No. 688156. The air quality data for the city of Limassol are provided by the Air Quality Division of the Department of Labour Inspection of the Ministry of Labour, Welfare and Social Insurance of Cyprus.</string>
+    <string name="amapSec">The map is ready</string>
+    <string name="Limassol">Limassol</string>
+    <string name="more">See More</string>
+    <string name="highV">H</string>
+    <string name="lowV">L</string>
+    <string name="desc">This graph presents the highest (H) and the lowest (L) values for today’s measurements.</string>
+    <string name="Vienna">Vienna</string>
+    <string name="Zagreb">Zagreb</string>
+    <string name="Vienna1">Vienna - Sensor 1 (PM2.5)</string>
+    <string name="highlow">This graph presents the highest (H) and the lowest (L) values for today’s measurements.</string>
+    <string name="dataComparisonfor">Data comparison for:</string>
+    <string name="lastM">Last Measurement: </string>
+
+    <string name="viennasens1">Vienna - Sensor 1 (PM2.5)</string>
+    <string name="viennasens2">Vienna - Sensor 2 (PM10)</string>
+    <string name="viennasens3">Vienna - Sensor 3 (NO2)</string>
+    <string name="viennasens4">Vienna - Sensor 4 (SO2)</string>
+    <string name="viennasens5">Vienna - Sensor 5 (O3)</string>
+    <string name="viennasens6">Vienna - Sensor 6 (O3)</string>
+    <string name="viennasens7">Vienna - Sensor 7 (SO2)</string>
+    <string name="viennasens8">Vienna - Sensor 8 (NO2)</string>
+
+    <string name="zagrebsens1">Parg - Sensor 1 (PM2.5)</string>
+    <string name="zagrebsens2">Zagreb - Sensor 2 (PM10)</string>
+    <string name="zagrebsens3">Zagreb - Sensor 3 (NO2)</string>
+    <string name="zagrebsens4">Zagreb - Sensor 4 (SO2)</string>
+    <string name="zagrebsens5">Zagreb - Sensor 5 (SO2)</string>
+    <string name="zagrebsens6">Zagreb - Sensor 6 (O3)</string>
+    <string name="zagrebsens7">Parg - Sensor 7 (O3)</string>
+    <string name="zagrebsens8">Zagreb - Sensor 8 (NO2)</string>
+
+
 </resources>

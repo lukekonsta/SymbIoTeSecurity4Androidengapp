@@ -88,8 +88,11 @@ public class ViennaS022 extends AppCompatActivity {
         Calendar calendar = Calendar.getInstance();
         calendar.add(Calendar.HOUR_OF_DAY, 0);
         calendar.add(Calendar.MINUTE, -40);
-        SimpleDateFormat format1 = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+        SimpleDateFormat format1 = new SimpleDateFormat("dd/MM/yyyy");
         String formatted = format1.format(calendar.getTime());
-        txt.setText(formatted);
+        SimpleDateFormat format2 = new SimpleDateFormat("HH:mm");
+        String formatted2 = format2.format(calendar.getTime());
+        String lastM = getResources().getString(R.string.lastM);
+        txt.setText(formatted+ System.lineSeparator() +lastM +" "+formatted2);
     }
 }

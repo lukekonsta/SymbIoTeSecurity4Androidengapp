@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IoT4ED</string>
+    <string name="google_maps_API_key">AIzaSyDUa-MnXhApj3dZODXyNo7_T13QiubYXHY</string>
+    <string name="airquality">Τρέχουσες Τιμές</string>
+    <string name="historical1">Ιστορικά Δεδομένα</string>
+    <string name="pollution">Επίπεδα Ρύπανσης</string>
+    <string name="unit">Μονάδα Μέτρησης: μg/m3</string>
+    <string name="pollutants">Ρύποι</string>
+    <string name="low">Χαμηλό</string>
+    <string name="moderate">Ήπιο</string>
+    <string name="high">Υψηλό</string>
+    <string name="veryhigh">Πολύ Υψηλό</string>
+    <string name="aboutUs">Σχετικά</string>
+    <string name="about1">H εφαρμογή αυτή δημιουργήθηκε από την ερευνητική ομάδα “Νέα Μέσα, Νόηση, και Μάθηση” σε συνεργασία με το εργαστήριο του “Διαδικτύου των Πραγμάτων (IoTLab)” του Τμήματος Επικοινωνίας και Σπουδών Διαδικτύου του Τεχνολογικού Πανεπιστημίου Κύπρου στο πλαίσιο του ευρωπαϊκού ερευνητικού προγράμματος \"IoT for Education: Presenting air quality matters\"."
+
+    "Το πρόγραμμα έλαβε χρηματοδότηση από το πρόγραμμα Έρευνας και Καινοτομίας της Ευρωπαϊκής Ένωσης Horizon 2020 βάσει της συμφωνίας επιχορήγησης με αριθμό 688156."
+    "Τα δεδομένα ποιότητας αέρα για την πόλη της Λεμεσού παρέχονται από τον Κλάδο Ποιότητας Αέρα, του Τμήματος Επιθεώρησης Εργασίας του Υπουργείου Εργασίας, Πρόνοιας και Κοινωνικών Ασφαλίσεων Κύπρου.</string>
+    <string name="amapSec">Ο χάρτης είναι έτοιμος</string>
+    <string name="Limassol">Λεμεσός</string>
+    <string name="more">Δείτε περισσότερα</string>
+    <string name="highV">Υ</string>
+    <string name="lowV">Χ</string>
+    <string name="desc">Η πιο κάτω γραφική παράσταση παρουσιάζει τις υψηλότερες (Υ) και τις χαμηλότερες (Χ) τιμές για τις μετρήσεις που έγιναν σήμερα.</string>
+    <string name="Vienna">Βιέννη</string>
+    <string name="Zagreb">Ζάγκρεμπ</string>
+    <string name="Vienna1">Βιέννη - Αισθητήρας 1 (PM2.5)</string>
+    <string name="highlow">Η πιο κάτω γραφική παράσταση παρουσιάζει τις υψηλότερες (Υ) και τις χαμηλότερες (Χ) τιμές για τις μετρήσεις που έγιναν σήμερα.</string>
+    <string name="dataComparisonfor">Σύγκριση δεδομένων για:</string>
+    <string name="lastM">Τελευταία μέτρηση: </string>
+
+    <string name="viennasens1">Βιέννη - Αισθητήρας 1 (PM2.5)</string>
+    <string name="viennasens2">Βιέννη - Αισθητήρας 2 (PM10)</string>
+    <string name="viennasens3">Βιέννη - Αισθητήρας 3 (NO2)</string>
+    <string name="viennasens4">Βιέννη - Αισθητήρας 4 (SO2)</string>
+    <string name="viennasens5">Βιέννη - Αισθητήρας 5 (O3)</string>
+    <string name="viennasens6">Βιέννη - Αισθητήρας 6 (O3)</string>
+    <string name="viennasens7">Βιέννη - Αισθητήρας 7 (SO2)</string>
+    <string name="viennasens8">Βιέννη - Αισθητήρας 8 (NO2)</string>
+
+    <string name="zagrebsens1">Πάργ - Αισθητήρας 1 (PM2.5)</string>
+    <string name="zagrebsens2">Ζάγκρεμπ - Αισθητήρας 2 (PM10)</string>
+    <string name="zagrebsens3">Ζάγκρεμπ - Αισθητήρας 3 (NO2)</string>
+    <string name="zagrebsens4">Ζάγκρεμπ - Αισθητήρας 4 (SO2)</string>
+    <string name="zagrebsens5">Ζάγκρεμπ - Αισθητήρας 5 (SO2)</string>
+    <string name="zagrebsens6">Ζάγκρεμπ - Αισθητήρας 6 (O3)</string>
+    <string name="zagrebsens7">Πάργ - Αισθητήρας 7 (O3)</string>
+    <string name="zagrebsens8">Ζάγκρεμπ - Αισθητήρας 8 (NO2)</string>
+</resources>
+

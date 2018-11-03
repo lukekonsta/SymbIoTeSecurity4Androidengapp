@@ -19,7 +19,7 @@
       android:allowBackup="true"
       android:icon="@mipmap/ic_launcher"
       android:label="@string/app_name"
-      android:roundIcon="@mipmap/ic_launcher_round"
+      android:roundIcon="@drawable/iot4ed"
       android:supportsRtl="true"
       android:theme="@style/AppTheme">
     <activity
@@ -35,7 +35,7 @@
     <activity
         android:name=".Map_Second"
         android:configChanges="orientation"
-        android:label="Map of Limassol"
+        android:label="@string/Limassol"
         android:screenOrientation="portrait" />
 
     <meta-data
@@ -48,29 +48,29 @@
     <activity
         android:name=".Charts"
         android:configChanges="orientation"
-        android:label="Current Data"
+        android:label="@string/airquality"
         android:screenOrientation="portrait" />
     <activity
         android:name=".Colors"
         android:configChanges="orientation"
-        android:label="Pollution Charts"
+        android:label="@string/pollution"
         android:screenOrientation="portrait" />
     <activity
         android:name=".Limassol"
         android:configChanges="orientation"
-        android:label="Limassol"
+        android:label="@string/Limassol"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".Zagreb"
         android:configChanges="orientation"
-        android:label="Zagreb"
+        android:label="@string/Zagreb"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".Vienna"
         android:configChanges="orientation"
-        android:label="Vienna"
+        android:label="@string/Vienna"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
@@ -81,67 +81,67 @@
     <activity
         android:name=".About"
         android:configChanges="orientation"
-        android:label="About"
+        android:label="@string/aboutUs"
         android:screenOrientation="portrait" />
     <activity
         android:name=".Map_Third"
         android:configChanges="orientation"
-        android:label="Map of Zagreb"
+        android:label="@string/Zagreb"
         android:screenOrientation="portrait" />
     <activity
         android:name=".Map_First"
         android:configChanges="orientation"
-        android:label="Map of Vienna"
+        android:label="@string/Vienna"
         android:screenOrientation="portrait" />
     <activity
         android:name=".Comparison"
         android:configChanges="orientation"
-        android:label="PM2.5 Comparison"
+        android:label="PM2.5"
         android:screenOrientation="portrait" />
     <activity
         android:name=".PM10"
         android:configChanges="orientation"
-        android:label="PM10 Comparison"
+        android:label="PM10"
         android:screenOrientation="portrait" />
     <activity
         android:name=".NO2"
         android:configChanges="orientation"
-        android:label="NO2 Comparison"
+        android:label="NO2"
         android:screenOrientation="portrait" />
     <activity
         android:name=".ViennaPM25"
         android:configChanges="orientation"
-        android:label="Vienna PM2.5"
+        android:label="@string/viennasens1"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".ViennaPM10"
         android:configChanges="orientation"
-        android:label="Vienna PM10"
+        android:label="@string/viennasens2"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".ViennaNO2"
         android:configChanges="orientation"
-        android:label="Vienna NO2"
+        android:label="@string/viennasens3"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".ZagrebPM10"
         android:configChanges="orientation"
-        android:label="Zagreb PM10"
+        android:label="@string/zagrebsens2"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".ZagrebPM25"
         android:configChanges="orientation"
-        android:label="Ζagreb PM2.5"
+        android:label="@string/zagrebsens1"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".ZagrebNO2"
         android:configChanges="orientation"
-        android:label="Ζagreb ΝΟ2"
+        android:label="@string/zagrebsens3"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
@@ -162,156 +162,156 @@
     <activity
         android:name=".ViennaSO"
         android:configChanges="orientation"
-        android:label="Vienna SΟ2"
+        android:label="@string/viennasens4"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".ViennaOZ"
         android:configChanges="orientation"
-        android:label="Vienna Ο3"
+        android:label="@string/viennasens5"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".Vienna0Z2"
         android:configChanges="orientation"
-        android:label="Vienna Ο3"
+        android:label="@string/viennasens6"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".ViennaS022"
         android:configChanges="orientation"
-        android:label="Vienna SΟ2"
+        android:label="@string/viennasens7"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".ViennaNitro2"
         android:configChanges="orientation"
-        android:label="Vienna ΝΟ2"
+        android:label="@string/viennasens8"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".ZagrebSulphur"
         android:configChanges="orientation"
-        android:label="Ζagreb SΟ2"
+        android:label="@string/zagrebsens4"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".ZagrebSulphur2"
         android:configChanges="orientation"
-        android:label="Ζagreb SΟ2"
+        android:label="@string/zagrebsens5"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".ZagrebOzone"
         android:configChanges="orientation"
-        android:label="Ζagreb Ο3"
+        android:label="@string/zagrebsens6"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".ZagrebOzone2"
         android:configChanges="orientation"
-        android:label="Ζagreb Ο3"
+        android:label="@string/zagrebsens7"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".ZagrebNitrogen2"
         android:configChanges="orientation"
-        android:label="Ζagreb ΝΟ2"
+        android:label="@string/zagrebsens8"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme.CustomTheme" />
     <activity
         android:name=".Sulphur"
         android:configChanges="orientation"
-        android:label="S02 Comparison"
+        android:label="S02"
         android:screenOrientation="portrait" />
     <activity
         android:name=".Ozone"
         android:configChanges="orientation"
-        android:label="03 Comparison"
+        android:label="03"
         android:screenOrientation="portrait" />
     <activity
         android:name=".Weeks"
-        android:label="Historical Data"
+        android:label="@string/historical1"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".NO21"
-        android:label="NO2 - First Week"
+        android:label="NO2 - 1 - 8/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".Sulphur1"
-        android:label="SO2 - First Week"
+        android:label="SO2 - 1 - 8/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".PM101"
-        android:label="PM10 - First Week"
+        android:label="PM10 - 1 - 8/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".PM251"
-        android:label="PM25 - First Week"
+        android:label="PM25 - 1 - 8/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".O31"
-        android:label="O3 - First Week"
+        android:label="O3 - 1 - 8/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".O32"
-        android:label="O3 - Second Week"
+        android:label="O3 - 9 - 15/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".O33"
-        android:label="O3 - Third Week"
+        android:label="O3 - 16 - 22/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".O34"
-        android:label="O3 - Fourth Week"
+        android:label="O3 - 23 - 31/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".NO22"
-        android:label="ΝO2 - Second Week"
+        android:label="ΝO2 - 9 - 15/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".NO23"
-        android:label="ΝO2 - Third Week"
+        android:label="ΝO2 - 16 - 22/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".NO24"
-        android:label="ΝO2 - Fourth Week"
+        android:label="ΝO2 - 23 - 31/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".PM102"
-        android:label="PM10 - Second Week"
+        android:label="PM10 - 9 - 15/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".PM103"
-        android:label="PM10 - Third Week"
+        android:label="PM10 - 16 - 22/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".PM104"
-        android:label="PM10 - Fourth Week"
+        android:label="PM10 - 23 - 31/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".PM252"
-        android:label="PM25 - Second Week"
+        android:label="PM25 - 9 - 15/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".PM253"
-        android:label="PM25 - Third Week"
+        android:label="PM25 - 16 - 22/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".PM254"
-        android:label="PM25 - Fourth Week"
+        android:label="PM25 - 23 - 31/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".Sulphur3"
-        android:label="SO2 - Third Week"
+        android:label="SO2 - 16 - 22/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".Sulphur4"
-        android:label="SO2 - Fourth Week"
+        android:label="SO2 - 23 - 31/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"/>
     <activity android:name=".Sulphur2"
-        android:label="SO2 - Second Week"
+        android:label="SO2 - 9 - 15/8/2018"
         android:configChanges="orientation"
         android:screenOrientation="portrait"></activity>
   </application>
