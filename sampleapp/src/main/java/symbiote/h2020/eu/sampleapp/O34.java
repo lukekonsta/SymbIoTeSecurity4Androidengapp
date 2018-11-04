@@ -68,8 +68,8 @@ public class O34 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_o34);
 
-        barWidth = 0.7f;
-        barSpace = 0.8f;
+        barWidth = 0.5f;
+        barSpace = 0.5f;
         groupSpace = 0.8f;
 
         chart = (BarChart)findViewById(R.id.barChart);
@@ -89,16 +89,21 @@ public class O34 extends AppCompatActivity {
         ArrayList yVals2 = new ArrayList();
         ArrayList yVals3 = new ArrayList();
         ArrayList yVals4 = new ArrayList();
+        ArrayList yVals5 = new ArrayList();
+        ArrayList yVals6 = new ArrayList();
 
         yVals1.add(new BarEntry(1, 76));
         yVals2.add(new BarEntry(2, 33));
         yVals3.add(new BarEntry(3, 91));
         yVals4.add(new BarEntry(4, 14));
+        yVals5.add(new BarEntry(5, 86));
+        yVals6.add(new BarEntry(6, 30));
 
         String vienna = getResources().getString(R.string.Vienna);
         String zagreb = getResources().getString(R.string.Zagreb);
+        String limassol = getResources().getString(R.string.Limassol);
 
-        BarDataSet set1, set2, set3, set4, set5;
+        BarDataSet set1, set2, set3, set4, set5, set6;
         set1 = new BarDataSet(yVals1, vienna);
         set1.setColor(Color.BLUE);
         set1.setValueTextSize(12f);
@@ -111,7 +116,13 @@ public class O34 extends AppCompatActivity {
         set4 = new BarDataSet(yVals4, "");
         set4.setColor(Color.GREEN);
         set4.setValueTextSize(12f);
-        BarData data = new BarData(set1, set2, set3, set4);
+        set5 = new BarDataSet(yVals5, limassol);
+        set5.setColor(Color.MAGENTA);
+        set5.setValueTextSize(12f);
+        set6 = new BarDataSet(yVals6, "");
+        set6.setColor(Color.MAGENTA);
+        set6.setValueTextSize(12f);
+        BarData data = new BarData(set1, set2, set3, set4, set5, set6);
         data.setValueFormatter(new IntValueFormatter());
         //data.setValueFormatter(new LargeValueFormatter());
         chart.setData(data);
@@ -145,10 +156,13 @@ public class O34 extends AppCompatActivity {
         final ArrayList<String> xAxisLabel = new ArrayList<>();
         String highV = getResources().getString(R.string.highV);
         String lowwV = getResources().getString(R.string.lowV);
-        xAxisLabel.add("");
         xAxisLabel.add(highV);
         xAxisLabel.add(lowwV);
-        xAxisLabel.add("");
+        //xAxisLabel.add("");
+        xAxisLabel.add(highV);
+        //xAxisLabel.add("");
+        xAxisLabel.add(lowwV);
+        //xAxisLabel.add("");
         xAxisLabel.add(highV);
         //xAxisLabel.add("");
         xAxisLabel.add(lowwV);
