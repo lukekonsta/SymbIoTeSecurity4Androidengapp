@@ -25,7 +25,7 @@
     <string name="Vienna">Βιέννη</string>
     <string name="Zagreb">Ζάγκρεμπ</string>
     <string name="Vienna1">Βιέννη - Αισθητήρας 1 (PM2.5)</string>
-    <string name="highlow">Η πιο κάτω γραφική παράσταση παρουσιάζει τις υψηλότερες (Υ) και τις χαμηλότερες (Χ) τιμές για τις μετρήσεις που έγιναν σήμερα.</string>
+    <string name="highlow">Η πιο κάτω γραφική παράσταση παρουσιάζει τις υψηλότερες (Υ) και τις χαμηλότερες (Χ) τιμές για τις μετρήσεις που έγιναν την εβδομάδα.</string>
     <string name="dataComparisonfor">Σύγκριση δεδομένων για:</string>
     <string name="lastM">Τελευταία μέτρηση: </string>
 

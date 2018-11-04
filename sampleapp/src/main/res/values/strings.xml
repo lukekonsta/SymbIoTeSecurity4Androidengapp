@@ -3,7 +3,7 @@
     <string name="google_maps_API_key">AIzaSyDUa-MnXhApj3dZODXyNo7_T13QiubYXHY</string>
     <string name="airquality">Air Quality Now</string>
     <string name="historical1">Historical Data</string>
-    <string name="pollution">Pollution Level</string>
+    <string name="pollution">Data Comparison</string>
     <string name="unit">Unit: μg/m3</string>
     <string name="pollutants">Pollutants</string>
     <string name="low">Low</string>
@@ -23,7 +23,7 @@
     <string name="Vienna">Vienna</string>
     <string name="Zagreb">Zagreb</string>
     <string name="Vienna1">Vienna - Sensor 1 (PM2.5)</string>
-    <string name="highlow">This graph presents the highest (H) and the lowest (L) values for today’s measurements.</string>
+    <string name="highlow">This graph presents the highest (H) and the lowest (L) values for week’s measurements.</string>
     <string name="dataComparisonfor">Data comparison for:</string>
     <string name="lastM">Last Measurement: </string>
 

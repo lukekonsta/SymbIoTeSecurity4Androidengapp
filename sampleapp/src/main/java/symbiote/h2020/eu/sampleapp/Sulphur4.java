@@ -148,12 +148,12 @@ public class Sulphur4 extends AppCompatActivity {
         final ArrayList<String> xAxisLabel = new ArrayList<>();
         String highV = getResources().getString(R.string.highV);
         String lowwV = getResources().getString(R.string.lowV);
-        xAxisLabel.add(highV);
         xAxisLabel.add("");
+        xAxisLabel.add(highV);
         xAxisLabel.add(lowwV);
         xAxisLabel.add("");
         xAxisLabel.add(highV);
-        xAxisLabel.add("");
+        //xAxisLabel.add("");
         xAxisLabel.add(lowwV);
         //XAxis xAxis = chart.getXAxis();
         xAxis.setValueFormatter(new IAxisValueFormatter() {
