@@ -68,10 +68,10 @@ public class PM101 extends AppCompatActivity {
         setContentView(R.layout.activity_pm101);
 
 
-
         barWidth = 0.5f;
         barSpace = 0.5f;
-        groupSpace = 0.8f;
+        groupSpace = 0f;
+
 
         chart = (BarChart)findViewById(R.id.barChart);
         chart.setDescription(null);
@@ -93,12 +93,12 @@ public class PM101 extends AppCompatActivity {
         ArrayList yVals5 = new ArrayList();
         ArrayList yVals6 = new ArrayList();
 
-        yVals1.add(new BarEntry(1, 21));
-        yVals2.add(new BarEntry(2, 10));
-        yVals3.add(new BarEntry(3, 22));
-        yVals4.add(new BarEntry(4, 7));
-        yVals5.add(new BarEntry(5, 20));
-        yVals6.add(new BarEntry(6, 9));
+        yVals1.add(new BarEntry(0, 21));
+        yVals2.add(new BarEntry(1, 10));
+        yVals3.add(new BarEntry(2, 22));
+        yVals4.add(new BarEntry(3, 7));
+        yVals5.add(new BarEntry(4, 20));
+        yVals6.add(new BarEntry(5, 9));
 
         String vienna = getResources().getString(R.string.Vienna);
         String zagreb = getResources().getString(R.string.Zagreb);
@@ -150,7 +150,7 @@ public class PM101 extends AppCompatActivity {
         xAxis.setGranularityEnabled(true);
         xAxis.setCenterAxisLabels(true);
         xAxis.setDrawGridLines(false);
-        xAxis.setAxisMaximum(8);
+        xAxis.setAxisMaximum(6);
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         xAxis.setTextSize(11f);
         //xAxis.setValueFormatter(new IndexAxisValueFormatter(xVals));
@@ -172,7 +172,7 @@ public class PM101 extends AppCompatActivity {
             @Override
             public String getFormattedValue(float value, AxisBase axis) {
                 if(value>=0){
-                    if (value <= xAxisLabel.size() - 1){
+                    if (value <= xAxisLabel.size() - 0.1){
                         return (String) xAxisLabel.get((int) value);
                     }return "";
                 }return "";
@@ -186,6 +186,7 @@ public class PM101 extends AppCompatActivity {
         leftAxis.setSpaceTop(35f);
         leftAxis.setAxisMinimum(0f);
         leftAxis.setTextSize(11f);
+
 
 
 

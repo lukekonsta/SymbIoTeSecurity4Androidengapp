@@ -70,8 +70,7 @@ public class NO22 extends AppCompatActivity {
 
         barWidth = 0.5f;
         barSpace = 0.5f;
-        groupSpace = 0.8f;
-
+        groupSpace = 0f;
         chart = (BarChart)findViewById(R.id.barChart);
         chart.setDescription(null);
         chart.setPinchZoom(true);
@@ -149,14 +148,13 @@ public class NO22 extends AppCompatActivity {
         xAxis.setGranularityEnabled(true);
         xAxis.setCenterAxisLabels(true);
         xAxis.setDrawGridLines(false);
-        xAxis.setAxisMaximum(8);
+        xAxis.setAxisMaximum(6);
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         xAxis.setTextSize(11f);
         //xAxis.setValueFormatter(new IndexAxisValueFormatter(xVals));
         final ArrayList<String> xAxisLabel = new ArrayList<>();
         String highV = getResources().getString(R.string.highV);
         String lowwV = getResources().getString(R.string.lowV);
-        //xAxisLabel.add("");
         xAxisLabel.add(highV);
         xAxisLabel.add(lowwV);
         //xAxisLabel.add("");
@@ -172,7 +170,7 @@ public class NO22 extends AppCompatActivity {
             @Override
             public String getFormattedValue(float value, AxisBase axis) {
                 if(value>=0){
-                    if (value <= xAxisLabel.size() - 1){
+                    if (value <= xAxisLabel.size() - 0.1){
                         return (String) xAxisLabel.get((int) value);
                     }return "";
                 }return "";

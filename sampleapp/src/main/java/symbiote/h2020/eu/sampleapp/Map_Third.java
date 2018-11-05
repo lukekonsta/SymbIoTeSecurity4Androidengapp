@@ -123,7 +123,7 @@ public class Map_Third extends AppCompatActivity implements OnMapReadyCallback {
         CameraUpdate center=
                 CameraUpdateFactory.newLatLng(new LatLng(45.815011,
                         15.981919));
-        CameraUpdate zoom=CameraUpdateFactory.zoomTo(10);
+        CameraUpdate zoom=CameraUpdateFactory.zoomTo(5);
 
         mMap.moveCamera(center);
         mMap.animateCamera(zoom);

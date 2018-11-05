@@ -71,7 +71,7 @@ public class NO24 extends AppCompatActivity {
 
         barWidth = 0.5f;
         barSpace = 0.5f;
-        groupSpace = 0.8f;
+        groupSpace = 0f;
 
         chart = (BarChart)findViewById(R.id.barChart);
         chart.setDescription(null);
@@ -150,7 +150,7 @@ public class NO24 extends AppCompatActivity {
         xAxis.setGranularityEnabled(true);
         xAxis.setCenterAxisLabels(true);
         xAxis.setDrawGridLines(false);
-        xAxis.setAxisMaximum(8);
+        xAxis.setAxisMaximum(6);
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         xAxis.setTextSize(11f);
         //xAxis.setValueFormatter(new IndexAxisValueFormatter(xVals));
@@ -172,7 +172,7 @@ public class NO24 extends AppCompatActivity {
             @Override
             public String getFormattedValue(float value, AxisBase axis) {
                 if(value>=0){
-                    if (value <= xAxisLabel.size() - 1){
+                    if (value <= xAxisLabel.size() - 0.1){
                         return (String) xAxisLabel.get((int) value);
                     }return "";
                 }return "";
@@ -186,6 +186,7 @@ public class NO24 extends AppCompatActivity {
         leftAxis.setSpaceTop(35f);
         leftAxis.setAxisMinimum(0f);
         leftAxis.setTextSize(11f);
+
 
 
 

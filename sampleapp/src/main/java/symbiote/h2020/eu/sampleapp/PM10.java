@@ -93,9 +93,10 @@ public class PM10 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pm10);
 
-        barWidth = 0.6f;
+        barWidth = 0.5f;
         barSpace = 0.5f;
-        groupSpace = 0.4f;
+        groupSpace = 0f;
+
 
         setTitle = (TextView)findViewById(R.id.showTitle);
 
@@ -317,32 +318,30 @@ public class PM10 extends AppCompatActivity {
         yVals6.add(new BarEntry(5, value6));
         yVals7.add(new BarEntry(6, value7));
 
-        BarDataSet set2, set3, set4, set5, set6, set7;
-        /*set1 = new BarDataSet(yVals1, "Λεμεσός");
-        set1.setColor(Color.RED);
-        set1.setValueTextSize(12f);*/
-        String Vienna = getResources().getString(R.string.Vienna);
-        String Zagreb = getResources().getString(R.string.Zagreb);
-        String Limassol = getResources().getString(R.string.Limassol);
-        set2 = new BarDataSet(yVals2, Vienna);
+        String vienna = getResources().getString(R.string.Vienna);
+        String zagreb = getResources().getString(R.string.Zagreb);
+        String limassol = getResources().getString(R.string.Limassol);
+
+        BarDataSet set1, set2, set3, set4, set5, set6;
+        set1 = new BarDataSet(yVals2, vienna);
+        set1.setColor(Color.BLUE);
+        set1.setValueTextSize(12f);
+        set2 = new BarDataSet(yVals3, "");
         set2.setColor(Color.BLUE);
-        set2.setValueTextSize(10f);
-        set3 = new BarDataSet(yVals3, "");
-        set3.setColor(Color.BLUE);
-        set3.setValueTextSize(10f);
-        set4 = new BarDataSet(yVals4, Zagreb);
+        set2.setValueTextSize(12f);
+        set3 = new BarDataSet(yVals4, zagreb);
+        set3.setColor(Color.GREEN);
+        set3.setValueTextSize(12f);
+        set4 = new BarDataSet(yVals5, "");
         set4.setColor(Color.GREEN);
-        set4.setValueTextSize(10f);
-        set5 = new BarDataSet(yVals5, "");
-        set5.setColor(Color.GREEN);
-        set5.setValueTextSize(10f);
-        set6 = new BarDataSet(yVals6, Limassol);
+        set4.setValueTextSize(12f);
+        set5 = new BarDataSet(yVals6, limassol);
+        set5.setColor(Color.MAGENTA);
+        set5.setValueTextSize(12f);
+        set6 = new BarDataSet(yVals7, "");
         set6.setColor(Color.MAGENTA);
-        set6.setValueTextSize(10f);
-        set7 = new BarDataSet(yVals7, "");
-        set7.setColor(Color.MAGENTA);
-        set7.setValueTextSize(10f);
-        BarData data = new BarData(set2, set3, set4, set5, set6, set7);
+        set6.setValueTextSize(12f);
+        BarData data = new BarData(set1, set2, set3, set4, set5, set6);
         data.setValueFormatter(new IntValueFormatter());
         //data.setValueFormatter(new LargeValueFormatter());
         chart.setData(data);
@@ -355,7 +354,7 @@ public class PM10 extends AppCompatActivity {
 
         Legend l = chart.getLegend();
         l.setVerticalAlignment(Legend.LegendVerticalAlignment.TOP);
-        l.setHorizontalAlignment(Legend.LegendHorizontalAlignment.LEFT);
+        l.setHorizontalAlignment(Legend.LegendHorizontalAlignment.RIGHT);
         l.setOrientation(Legend.LegendOrientation.HORIZONTAL);
         l.setDrawInside(true);
         l.setYOffset(20f);
@@ -363,14 +362,13 @@ public class PM10 extends AppCompatActivity {
         l.setYEntrySpace(0f);
         l.setTextSize(11f);
 
-
         //X-axis
         XAxis xAxis = chart.getXAxis();
         xAxis.setGranularity(1f);
         xAxis.setGranularityEnabled(true);
         xAxis.setCenterAxisLabels(true);
         xAxis.setDrawGridLines(false);
-        xAxis.setAxisMaximum(8);
+        xAxis.setAxisMaximum(6);
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         xAxis.setTextSize(11f);
         //xAxis.setValueFormatter(new IndexAxisValueFormatter(xVals));
@@ -379,16 +377,20 @@ public class PM10 extends AppCompatActivity {
         String lowwV = getResources().getString(R.string.lowV);
         xAxisLabel.add(highV);
         xAxisLabel.add(lowwV);
+        //xAxisLabel.add("");
         xAxisLabel.add(highV);
+        //xAxisLabel.add("");
         xAxisLabel.add(lowwV);
+        //xAxisLabel.add("");
         xAxisLabel.add(highV);
+        //xAxisLabel.add("");
         xAxisLabel.add(lowwV);
         //XAxis xAxis = chart.getXAxis();
         xAxis.setValueFormatter(new IAxisValueFormatter() {
             @Override
             public String getFormattedValue(float value, AxisBase axis) {
                 if(value>=0){
-                    if (value <= xAxisLabel.size() - 1){
+                    if (value <= xAxisLabel.size() - 0.1){
                         return (String) xAxisLabel.get((int) value);
                     }return "";
                 }return "";
@@ -399,11 +401,9 @@ public class PM10 extends AppCompatActivity {
         YAxis leftAxis = chart.getAxisLeft();
         //leftAxis.setValueFormatter(new LargeValueFormatter());
         leftAxis.setDrawGridLines(true);
-        leftAxis.setTextSize(8f);
         leftAxis.setSpaceTop(35f);
         leftAxis.setAxisMinimum(0f);
-
-
+        leftAxis.setTextSize(11f);
 
 
         one = (Button)findViewById(R.id.pm25);

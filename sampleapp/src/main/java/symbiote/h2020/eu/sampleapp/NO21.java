@@ -70,9 +70,10 @@ public class NO21 extends AppCompatActivity {
         setContentView(R.layout.activity_no21);
 
 
+
         barWidth = 0.5f;
         barSpace = 0.5f;
-        groupSpace = 0.8f;
+        groupSpace = 0f;
 
         chart = (BarChart)findViewById(R.id.barChart);
         chart.setDescription(null);
@@ -100,7 +101,6 @@ public class NO21 extends AppCompatActivity {
         yVals4.add(new BarEntry(4, 14));
         yVals5.add(new BarEntry(5, 20));
         yVals6.add(new BarEntry(6, 11));
-
         String vienna = getResources().getString(R.string.Vienna);
         String zagreb = getResources().getString(R.string.Zagreb);
         String limassol = getResources().getString(R.string.Limassol);
@@ -151,14 +151,13 @@ public class NO21 extends AppCompatActivity {
         xAxis.setGranularityEnabled(true);
         xAxis.setCenterAxisLabels(true);
         xAxis.setDrawGridLines(false);
-        xAxis.setAxisMaximum(8);
+        xAxis.setAxisMaximum(6);
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
         xAxis.setTextSize(11f);
         //xAxis.setValueFormatter(new IndexAxisValueFormatter(xVals));
         final ArrayList<String> xAxisLabel = new ArrayList<>();
         String highV = getResources().getString(R.string.highV);
         String lowwV = getResources().getString(R.string.lowV);
-        //xAxisLabel.add("");
         xAxisLabel.add(highV);
         xAxisLabel.add(lowwV);
         //xAxisLabel.add("");
@@ -174,7 +173,7 @@ public class NO21 extends AppCompatActivity {
             @Override
             public String getFormattedValue(float value, AxisBase axis) {
                 if(value>=0){
-                    if (value <= xAxisLabel.size() - 1){
+                    if (value <= xAxisLabel.size() - 0.1){
                         return (String) xAxisLabel.get((int) value);
                     }return "";
                 }return "";
@@ -188,7 +187,6 @@ public class NO21 extends AppCompatActivity {
         leftAxis.setSpaceTop(35f);
         leftAxis.setAxisMinimum(0f);
         leftAxis.setTextSize(11f);
-
 
 
 
