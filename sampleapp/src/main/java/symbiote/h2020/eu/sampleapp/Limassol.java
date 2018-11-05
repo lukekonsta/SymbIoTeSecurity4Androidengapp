@@ -341,8 +341,18 @@ public class Limassol extends AppCompatActivity {
 
 
 
+        float var3 = 0;
 
-        float var3 = limassolData3.get(0);//pm25
+        if(limassolData3.size()==0){
+
+            var3 = 20;
+
+        }else{
+
+            var3 = limassolData3.get(0);//pm25
+        }
+
+
         if(var3<=25){
             txt2.setBackgroundColor(Color.GREEN);
         }else if(var3>25&&var3<=50){

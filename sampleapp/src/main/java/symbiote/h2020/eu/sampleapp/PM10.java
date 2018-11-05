@@ -442,7 +442,7 @@ public class PM10 extends AppCompatActivity {
         });
 
         description = (TextView)findViewById(R.id.desc);
-        String txt = getResources().getString(R.string.highlow);
+        String txt = getResources().getString(R.string.desc);
         description.setText((Html.fromHtml(txt)));
 
 

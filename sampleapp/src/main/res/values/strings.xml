@@ -45,5 +45,7 @@
     <string name="zagrebsens7">Parg - Sensor 7 (O3)</string>
     <string name="zagrebsens8">Zagreb - Sensor 8 (NO2)</string>
 
+    <string name="specialName">Pollution Levels</string>
+
 
 </resources>

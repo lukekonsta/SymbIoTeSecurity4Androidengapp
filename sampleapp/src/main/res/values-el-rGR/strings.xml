@@ -46,5 +46,8 @@
     <string name="zagrebsens6">Ζάγκρεμπ - Αισθητήρας 6 (O3)</string>
     <string name="zagrebsens7">Πάργ - Αισθητήρας 7 (O3)</string>
     <string name="zagrebsens8">Ζάγκρεμπ - Αισθητήρας 8 (NO2)</string>
+
+    <string name="specialName">Επίπεδα Ρύπανσης</string>
+
 </resources>
 

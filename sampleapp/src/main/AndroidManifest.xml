@@ -53,7 +53,7 @@
     <activity
         android:name=".Colors"
         android:configChanges="orientation"
-        android:label="@string/pollution"
+        android:label="@string/specialName"
         android:screenOrientation="portrait" />
     <activity
         android:name=".Limassol"

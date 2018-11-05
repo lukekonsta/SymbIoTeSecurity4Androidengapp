@@ -956,7 +956,7 @@ public class MainActivity extends AppCompatActivity {
                 String pollutantValue = hey.getString("pollutant_value");
                 int element1 = Integer.parseInt(element);
                 int location1 = Integer.parseInt(location);
-                if(element1==26 && location1==1){
+                if(element1==26 && location1==3){
                     System.out.println("PM25: " + pollutantValue);
                     category.add(pollutantValue);
                     //break;
