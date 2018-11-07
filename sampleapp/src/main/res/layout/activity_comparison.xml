@@ -56,7 +56,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@android:color/holo_blue_light"
-            android:text="PM25"/>
+            android:text="PM2.5"/>
 
         <Button
             android:id="@+id/pm10"

@@ -17,7 +17,7 @@
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_weight="0.2"
             android:layout_height="match_parent"
             android:src="@drawable/tec" />
 
@@ -31,25 +31,15 @@
 
 
         <TextView
+            android:text="@string/about1"
             android:id="@+id/txt"
             android:gravity="center"
             android:lineSpacingExtra="3dp"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
+            android:layout_height="match_parent"
             android:textSize="25sp"
             android:textStyle="bold"
             android:layout_marginBottom="15dp"/>
-
-        <TextView
-            android:id="@+id/txt2"
-            android:gravity="center"
-            android:lineSpacingExtra="3dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:textSize="25sp"
-            android:textStyle="bold" />
 
 
     </LinearLayout>
@@ -57,7 +47,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.3"
+        android:layout_weight="0.2"
         android:orientation="horizontal">
 
         <ImageView
